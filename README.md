@@ -1,23 +1,3 @@
-# Team10
-- Shuai Zhang (st169622)
-- Peng GU (st169623)
-
-# Work distribution
-- Diabetic Retinopathy:
-  
-  - Shuai ZHANG: model architecture, training, hyperparameter optimization, transfer learning, ensemble learning and multi-class classification.
-  
-  -  Peng GU: input pipeline(binary classification & multi-class classification), metrics, evaluation, data augmentation and deep visualization.
-- Human Activity Recognition:
-
-  - Shuai ZHANG: input pipeline, metrics and evaluation.
-
-  - Peng GU: model architecture, training and hyperparameter optimization.
-
-- Portability:
-  
-  - Shuai ZHANG & Peng GU: relative path, flags and different configuration files.
-
 # How to run the code
 
 ## Installation
