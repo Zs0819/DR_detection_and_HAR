@@ -1,0 +1,54 @@
+############### PLEASE READ THIS BEFORE USING THIS CONFIG ###############
+# This is for binary classification of the diabetic retinopathy task:
+# - There are totally three models, namely resnet_like model, vgg_like model,
+#   and transfer model.
+# - For training, download IDRID dataset and put it in the folder:
+#   `diabetic_retinopathy/datasets/`.
+# - For inference, put the corresponding checkpoints(already provided)
+#   under the corresponding folder:
+#   e.g. `diabetic_retinopathy/checkpoint/2classes/resnet/`
+# - For more details, please follow the README on the website:
+#   `https://github.tik.uni-stuttgart.de/iss/dl-lab-21w-team10`
+#########################################################################
+
+
+# Resnet_like
+resnet_like.base_filter = 16
+resnet_like.layers_params = [2, 2, 2]
+resnet_like.dropout_rate = 0.5
+resnet_like.n_classes = 2
+
+# Vgg_like
+vgg_like.base_filters = 16
+vgg_like.n_blocks = 4
+vgg_like.dense_units = 64
+vgg_like.dropout_rate = 0.5
+vgg_like.n_classes = 2
+
+# transfer_models
+densenet_transfer.dropout_rate = 0.4
+densenet_transfer.num_classes = 2
+
+# Training
+Trainer.total_steps = 1e5
+Trainer.log_interval = 1e2
+Trainer.ckpt_interval = 1e3
+
+# Evaluation
+evaluate.num_classes = 2
+
+# Input pipeline
+load.name = 'idrid'
+load.data_dir = '/home/data/tensorflow_datasets'
+load.num_classes = 2
+# load.data_dir = '/content/drive/My Drive/IDRID_dataset'
+preprocess.img_height = 512
+preprocess.img_width = 512
+augment.img_height = 512
+augment.img_width = 512
+prepare.batch_size = 32
+prepare.caching = False
+
+
+
+
