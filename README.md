@@ -23,7 +23,7 @@ Datasets:
     IDRID are categorized into two parts, retinal images with and without signs of diabetic retinopathy. Each 
     image is associated with a ground truth respectively label, that is the severity grade of diabetic retinopathy.
     
-  - Download link:  `https://ilias3.uni-stuttgart.de/goto.php?target=wiki_2667521_Datasets`
+  
   
 - HAPT:
   - Introduction:Human Activities and Postural Transitions Dataset (HAPT) consists of six basic activities and six postural 
@@ -31,12 +31,7 @@ Datasets:
     activities include walking, walking downstairs and walking upstairs. Stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit,
     stand-to-lie, and lie-to-stand are the classes for postural transitions between the static activities.
     
-  - Download link:  `https://ilias3.uni-stuttgart.de/goto.php?target=wiki_2667521_Datasets`
-
-Location:
-- download the corresponding datasets, put [IDRID](https://ilias3.uni-stuttgart.de/goto.php?target=wiki_2667521_Datasets) dataset under the folder
-`diabetic_retinopathy/datasets/`, put [HAPT](https://ilias3.uni-stuttgart.de/goto.php?target=wiki_2667521_Datasets) dataset under the folder `human_activity_recognition/datasets/`.
-
+  
 TFRecords: 
 
 - under the folder `diabetic_retinopathy/input_pipeline/`, run the following command to convert IDRID dataset into TFRecords
